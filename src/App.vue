@@ -1,31 +1,42 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div id="app">
+        <header>
+            <p>This is a header</p>
+            <p>This is a header</p>
+            <p>This is a header</p>
+        </header>
+        <nav>
+            <router-link to="/">Home</router-link>
+            <router-link to="/about">About</router-link>
+        </nav>
+        <main>
+            <router-view/>
+        </main>
     </div>
-    <router-view/>
-  </div>
 </template>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-}
+<style lang="scss">
+    #app {
+        display: grid;
+        grid-template-rows: 30px calc(100vh - 50px);
+        grid-template-columns: 250px 1fr;
+        grid-template-areas: "header header" "nav    main";
+    }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    header {
+        grid-area: header;
+        display: flex;
+        flex-direction: row;
+    }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    nav {
+        grid-area: nav;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        grid-area: main;
+    }
+
 </style>
