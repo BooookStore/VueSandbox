@@ -1,6 +1,6 @@
 <template>
-    <div id="root">
-        <molecule-logo-link/>
+    <div class="ui attached stackable borderless menu">
+        <molecule-logo-link class="item"/>
     </div>
 </template>
 
@@ -15,9 +15,3 @@
     export default class OrganismsHeader extends Vue {
     }
 </script>
-
-<style scoped lang="scss">
-    #root {
-        background-color: #ff9200;
-    }
-</style>
