@@ -1,9 +1,7 @@
 <template>
     <div id="app">
         <header>
-            <p>This is a header</p>
-            <p>This is a header</p>
-            <p>This is a header</p>
+            <organisms-header/>
         </header>
         <nav>
             <router-link to="/">Home</router-link>
@@ -14,6 +12,19 @@
         </main>
     </div>
 </template>
+
+<script lang="ts">
+import {Component, Vue} from 'vue-property-decorator';
+
+import OrganismsHeader from '@/components/organisms/global/OrganismsHeader';
+
+@Component({
+    components: {OrganismsHeader},
+})
+export default class App extends Vue {
+
+}
+</script>
 
 <style lang="scss">
     #app {
