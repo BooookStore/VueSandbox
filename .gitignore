@@ -19,3 +19,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw*
+
+# Semantic UI
+src/assets/semantic/dist/**
