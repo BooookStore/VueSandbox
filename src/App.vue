@@ -29,7 +29,7 @@ export default class App extends Vue {
 <style lang="scss">
     #app {
         display: grid;
-        grid-template-rows: 30px calc(100vh - 50px);
+        grid-template-rows: max-content calc(100vh - 50px);
         grid-template-columns: 250px 1fr;
         grid-template-areas: "header header" "nav    main";
     }

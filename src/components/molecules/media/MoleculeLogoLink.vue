@@ -4,3 +4,9 @@
         <span>Vue Sandbox Project</span>
     </router-link>
 </template>
+
+<style scoped lang="scss">
+    span {
+        font-size: 1.6rem;
+    }
+</style>

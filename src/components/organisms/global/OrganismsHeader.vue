@@ -1,5 +1,5 @@
 <template>
-    <div class="ui attached stackable borderless menu">
+    <div class="ui orange inverted attached stackable borderless menu">
         <molecule-logo-link class="item"/>
     </div>
 </template>
