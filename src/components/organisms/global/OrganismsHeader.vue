@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="root">
         <molecule-logo-link/>
     </div>
 </template>
@@ -16,6 +16,8 @@
     }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+    #root {
+        background-color: #ff9200;
+    }
 </style>
