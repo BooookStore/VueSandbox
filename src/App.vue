@@ -4,8 +4,7 @@
             <organisms-header/>
         </header>
         <nav>
-            <router-link to="/">Home</router-link>
-            <router-link to="/about">About</router-link>
+            <organisms-navigation/>
         </nav>
         <main>
             <router-view/>
@@ -17,9 +16,10 @@
 import {Component, Vue} from 'vue-property-decorator';
 
 import OrganismsHeader from '@/components/organisms/global/OrganismsHeader';
+import OrganismsNavigation from '@/components/organisms/global/OrganismsNavigation';
 
 @Component({
-    components: {OrganismsHeader},
+    components: {OrganismsNavigation, OrganismsHeader},
 })
 export default class App extends Vue {
 
