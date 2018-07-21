@@ -1,5 +1,5 @@
 <template>
-    <div class="ui inverted vertical menu">
+    <div id="root" class="ui inverted vertical menu">
         <router-link class="item" to="/">Home</router-link>
         <router-link class="item" to="/about">About</router-link>
     </div>
@@ -13,3 +13,5 @@ export default class MoleculeSidebarNavigation extends Vue {
 }
 </script>
 
+<style scoped lang="less">
+</style>

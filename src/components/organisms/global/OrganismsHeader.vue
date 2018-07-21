@@ -1,5 +1,5 @@
 <template>
-    <div class="ui orange inverted attached stackable borderless menu">
+    <div id="root" class="ui orange inverted attached stackable borderless menu">
         <molecule-logo-link class="item"/>
     </div>
 </template>
@@ -15,3 +15,9 @@
     export default class OrganismsHeader extends Vue {
     }
 </script>
+
+<style scoped lang="less">
+    #root {
+        height: 100%;
+    }
+</style>
